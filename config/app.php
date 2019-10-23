@@ -229,4 +229,6 @@ return [
 
     ],
 
+    'website_name' => env('WEBSITE_NAME','The Tea'),
+
 ];

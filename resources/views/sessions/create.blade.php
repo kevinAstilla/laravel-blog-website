@@ -26,6 +26,7 @@
 
 			<div class="form-group">
 				<button type="submit" class="btn btn-primary">Sign In</button>
+				<a class="btn btn-secondary" href="/register" role="button">Sign Up</a>
 			</div>
 
 			@include ('layouts.errors')

@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Blog Template for Bootstrap</title>
+    <title>The Tea</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
 
     <!-- Bootstrap core CSS -->
@@ -35,8 +35,8 @@
 
   <div class="blog-header">
       <div class="container">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
-        <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+        <h1 class="blog-title"> {{ Config::get('app.website_name') }}</h1>
+        <p class="lead blog-description">Share what you know, or just sip Tea.</p>
       </div>
     </div>
 
