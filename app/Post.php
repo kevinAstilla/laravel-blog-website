@@ -8,7 +8,7 @@ class Post extends Model
 {
 	//delete after DEMO
     // protected $fillable = ['title', 'body'];
-    // protected $guarded = []//variables that you want to be protected
+    // protected $guarded = [];//variables that you want to be protected
 
     public function comments()
     {
@@ -23,7 +23,8 @@ class Post extends Model
 
     public function addComment($body)
     {
-    	$this->comments()->create(compact('body'));
+        $user_id = \Auth::user()->id;
+    	$this->comments()->create(compact('user_id','body'));
 
     	// DELETE AFTER DEMO
     	//long method

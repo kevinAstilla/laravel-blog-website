@@ -17,8 +17,7 @@ class CommentsController extends Controller
     {
 
     	//validation
-    	$this->validate(request(), ['body' => 'required|min:2']);
-
+    	//$this->validate(request(), ['body' => 'required|min:2']);
     	$post->addComment(request('body'));
     	//create a comment to a post
     	//this is the long method

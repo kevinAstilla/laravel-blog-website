@@ -11,17 +11,14 @@
 //$stripe = app('App\Billing\Stripe');
 
 //dd(resolve('App\Billing\Stripe'));
-
-Route::get('/posts/create', 'PostsController@create');
-Route::post('/posts/{post}/comments', 'CommentsController@store');
-
 Route::get('/', 'PostsController@index')->name('home');
 
 
 Route::post('/posts', 'PostsController@store');
 Route::get('/posts/{post}', 'PostsController@show');
+Route::get('/posts/create', 'PostsController@create');
 Route::get('/posts/tags/{tag}', 'TagsController@index');
-
+Route::post('/posts/{post}/comments', 'CommentsController@store');
 
 
 Route::get('/register', 'RegistrationController@create');
